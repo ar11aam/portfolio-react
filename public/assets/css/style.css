@@ -300,7 +300,7 @@ button:focus {
     .header_area .navbar .nav .nav-item {
       margin-right: 45px; }
       .header_area .navbar .nav .nav-item .nav-link {
-        font: 500 14px/100px "Rubik", sans-serif;
+        font: 600 14px/100px "Rubik", sans-serif;
         text-transform: uppercase;
         color: var(--body_color);
         padding: 0px;

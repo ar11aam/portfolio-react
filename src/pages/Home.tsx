@@ -52,7 +52,7 @@ const Home: React.FC = () => {
               <div className="col-lg-7" style={{ marginTop: "200px" }}>
                 <div className="banner_content">
                   <h3 className="text-uppercase" style={{ fontWeight: "700" }}>
-                    Programmer
+                    Arham
                   </h3>
                   <h1 className="text-uppercase" style={{ fontWeight: "600" }}>
                     Web developer
@@ -260,7 +260,7 @@ const Home: React.FC = () => {
             <div className="col-lg-4 col-md-6">
               <div className="client-info">
                 <div className="d-flex mb-50 justify-content-center align-items-center">
-                  <span className="lage">3</span>
+                  <span className="lage">2</span>
                   <span className="smll">
                     Years Working <br /> Experience
                   </span>
