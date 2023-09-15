@@ -52,7 +52,7 @@ const Home: React.FC = () => {
               <div className="col-lg-7" style={{ marginTop: "200px" }}>
                 <div className="banner_content">
                   <h3 className="text-uppercase" style={{ fontWeight: "700" }}>
-                    Programmer
+                    Arham
                   </h3>
                   <h1 className="text-uppercase" style={{ fontWeight: "600" }}>
                     Web developer
