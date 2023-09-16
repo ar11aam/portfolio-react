@@ -65,30 +65,80 @@ const Contact: React.FC = () => {
               <h2 className="text-center">Reach Me Directly</h2>
             </div>
             <div
-              className="row d-flex justify-content-center"
+              className="row d-flex "
               style={{ flexWrap: "wrap", padding: "20px" }}
             >
-              <div className="col-lg-4 d-flex justify-content-center">
+              <div className="col-lg-4 d-flex">
                 <div className="contact_info">
-                  <div className="info_item">
-                    <FontAwesomeIcon icon={faHouse} />
-                    <h6>Punjab, Pakistan</h6>
-                    <p>Santa monica bullevard</p>
+                  <div className="info_item row pb-3">
+                    <div className="col" style={{ flexGrow: "unset" }}>
+                      <FontAwesomeIcon
+                        icon={faHouse}
+                        style={{
+                          fontSize: "40px",
+                          paddingTop: "5px",
+                          color: "#854fee",
+                        }}
+                      />
+                    </div>
+                    <div className="col">
+                      <h6 style={{ color: "unset" }}>Punjab, Pakistan</h6>
+                      <p>
+                        Khayban-e-sarwar
+                        <br /> D. G. Khan
+                      </p>
+                    </div>
                   </div>
 
-                  <div className="info_item">
-                    <FontAwesomeIcon icon={faPhone} />
-                    <h6>
-                      <a href="#">+92 317 6514 544</a>
-                    </h6>
-                    <p>Mon to Fri 9am to 6 pm</p>
+                  <div className="info_item row pb-3">
+                    <div className="col" style={{ flexGrow: "unset" }}>
+                      <a href="tel:+923176514544" style={{ color: "unset" }}>
+                        <FontAwesomeIcon
+                          icon={faPhone}
+                          style={{
+                            fontSize: "40px",
+                            color: "#854fee",
+                          }}
+                        />
+                      </a>
+                    </div>
+                    <a
+                      href="tel:+923176514544"
+                      style={{ color: "unset" }}
+                      id="info_item"
+                    >
+                      <div className="col">
+                        <h6>
+                          <a>+92 317 6514 544</a>
+                        </h6>
+                        <p>Mon to Fri 9am to 6 pm</p>
+                      </div>
+                    </a>
                   </div>
-                  <div className="info_item">
-                    <FontAwesomeIcon icon={faEnvelope} />
-                    <h6>
-                      <a href="#">arhamtayyab553@gmail.com</a>
-                    </h6>
-                    <p>Send us your query anytime!</p>
+                  <div className="info_item row">
+                    <div className="col" style={{ flexGrow: "unset" }}>
+                      <a
+                        href="mailto: arhamtayyab553@gmail.com"
+                        style={{ color: "unset" }}
+                      >
+                        <FontAwesomeIcon
+                          icon={faEnvelope}
+                          style={{ fontSize: "40px", color: "#854fee" }}
+                        />
+                      </a>
+                    </div>
+                    <a
+                      href="mailto: arhamtayyab553@gmail.com"
+                      style={{ color: "unset" }}
+                      id="info_item"
+                    >
+                      <div className="col">
+                        <h6>
+                          <a>arhamtayyab553@gmail.com</a>
+                        </h6>
+                        <p>Send us your query anytime!</p>
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>

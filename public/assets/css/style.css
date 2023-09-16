@@ -1202,9 +1202,15 @@ button:focus {
   height: 420px;
   margin-top: 80px; }
 
+  #info_item h6 a{
+    color: var(--body_color);
+  }
+
 .contact_info .info_item {
   position: relative;
-  padding-left: 45px; }
+  padding-left: 45px;
+  
+ }
   .contact_info .info_item i {
     position: absolute;
     left: 0;
@@ -1227,7 +1233,7 @@ button:focus {
     padding: 2px 0px; }
 
   .contact_form .form-group .form-control {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 26px;
     color: var(--body_color) ;
     background-color: var(--body_background);
