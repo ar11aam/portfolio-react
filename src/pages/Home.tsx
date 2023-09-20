@@ -12,15 +12,9 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const Home: React.FC = () => {
-  const [selectedTheme, setSelectedTheme] = useState(
+  const [selectedTheme] = useState(
     localStorage.getItem("selectedTheme") || "light"
   );
-
-  const toggleTheme = () => {
-    const newTheme = selectedTheme === "dark" ? "light" : "dark";
-    setSelectedTheme(newTheme);
-    localStorage.setItem("selectedTheme", newTheme);
-  };
 
   console.log("Selected theme:", selectedTheme);
 
