@@ -3,7 +3,6 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import Lottie from "lottie-react";
 import { motion } from "framer-motion";
-import animationOne from "./json/QPNvcE3gyZ.json";
 import animationSeven from "./json/animation_llse4q9g.json";
 import "./css/styles.css";
 
@@ -13,9 +12,26 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const Home: React.FC = () => {
+  const [selectedTheme, setSelectedTheme] = useState(
+    localStorage.getItem("selectedTheme") || "light"
+  );
+
+  const toggleTheme = () => {
+    const newTheme = selectedTheme === "dark" ? "light" : "dark";
+    setSelectedTheme(newTheme);
+    localStorage.setItem("selectedTheme", newTheme);
+  };
+
+  console.log("Selected theme:", selectedTheme);
+
+  const getImageSource = () => {
+    return selectedTheme === "dark"
+      ? "assets/img/Untitled design2.png"
+      : "assets/img/Untitled design1.png";
+  };
+
   const form = useRef<HTMLFormElement>(null);
   const [isEmailSent, setEmailSent] = useState(false);
-
   const closeAlert = () => {
     setEmailSent(false);
   };
@@ -49,7 +65,7 @@ const Home: React.FC = () => {
         <div className="banner_inner">
           <div className="container">
             <div className="row">
-              <div className="col-lg-7" style={{ marginTop: "200px" }}>
+              <div className="col-lg-7" style={{ marginTop: "190px" }}>
                 <div className="banner_content">
                   <h3 className="text-uppercase" style={{ fontWeight: "700" }}>
                     Programmer
@@ -72,9 +88,18 @@ const Home: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-5" style={{ marginTop: "200px" }}>
-                <div className="home_right_img">
-                  <Lottie animationData={animationOne} />
+              <div className="col-lg-5" style={{ marginTop: "160px" }}>
+                <div className="home_right_img d-flex justify-content-center">
+                  <img
+                    key={selectedTheme} // Add this line to force re-render when the theme changes
+                    src={getImageSource()} // Toggle image source based on theme
+                    alt=""
+                    style={{
+                      width: "400px",
+                      marginLeft: "40px",
+                      marginTop: "10px",
+                    }}
+                  />
                 </div>
               </div>
             </div>

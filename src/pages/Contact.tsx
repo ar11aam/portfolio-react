@@ -114,7 +114,7 @@ const Contact: React.FC = () => {
                         <p>Mon to Fri 9am to 6 pm</p>
                       </div>
                     </a>
-                  </div>
+                  </div> 
                   <div className="info_item row">
                     <div className="col" style={{ flexGrow: "unset" }}>
                       <a

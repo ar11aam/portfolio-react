@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+import { useEffect } from "react";
 import "./DarkMode.css";
 
 const Header = () => {
@@ -25,6 +26,10 @@ const Header = () => {
   };
 
   const selectedTheme = localStorage.getItem("selectedTheme");
+
+  useEffect(() => {
+    toggleTheme({ target: { checked: selectedTheme === "dark" } });
+  }, [selectedTheme]);
 
   if (selectedTheme === "dark") {
     setDarkMode();
