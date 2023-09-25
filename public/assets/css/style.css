@@ -1202,6 +1202,20 @@ button:focus {
   height: 420px;
   margin-top: 80px; }
 
+  #addPic label{
+    font-size: 12px;
+    line-height: 26px;
+    color: var(--body_color);
+    background-color: transparent;
+    border: 1px solid var(--body_color);
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    padding: 7px; 
+  }
+  #addPic label:placeholder{
+    color:  var(--body_color); 
+  }
+
   #info_item h6 a{
     color: var(--body_color);
   }

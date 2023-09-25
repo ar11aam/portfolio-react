@@ -305,13 +305,11 @@ const Home: React.FC = () => {
                 onClick={() => null}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
+                style={{ height: "350px" }}
               >
                 <img src="assets/img/services/s1.png" alt="" />
                 <h4>Web development</h4>
-                <p>
-                  Creeping for female light years that lesser can't evening
-                  heaven isn't bearing tree
-                </p>
+                <p>Dedicated to designing seamless online experiences.</p>
               </motion.div>
             </div>
             <div className="col-lg-3 col-md-6">
@@ -320,12 +318,12 @@ const Home: React.FC = () => {
                 onClick={() => null}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
+                style={{ height: "350px" }}
               >
                 <img src="assets/img/services/s2.png" alt="" />
-                <h4>UI/UX design</h4>
+                <h4>Programming</h4>
                 <p>
-                  Creeping for female light years that lesser can't evening
-                  heaven isn't bearing tree
+                  Bringing concepts to life through the power of programming.
                 </p>
               </motion.div>
             </div>
@@ -335,12 +333,13 @@ const Home: React.FC = () => {
                 onClick={() => null}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
+                style={{ height: "350px" }}
               >
                 <img src="assets/img/services/s3.png" alt="" />
                 <h4>Web design</h4>
                 <p>
-                  Creeping for female light years that lesser can't evening
-                  heaven isn't bearing tree
+                  Design is not just about looks, but about how it makes users
+                  feel.
                 </p>
               </motion.div>
             </div>
@@ -350,12 +349,13 @@ const Home: React.FC = () => {
                 onClick={() => null}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
+                style={{ height: "350px" }}
               >
                 <img src="assets/img/services/s4.png" alt="" />
                 <h4>Database Management</h4>
                 <p>
-                  Creeping for female light years that lesser can't evening
-                  heaven isn't bearing tree
+                  Designing, optimizing, and managing databases to support your
+                  growth.
                 </p>
               </motion.div>
             </div>
