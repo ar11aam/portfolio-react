@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import {
   faHouse,
   faPhone,
   faEnvelope,
+  faCircleCheck,
 } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 
@@ -114,7 +114,7 @@ const Contact: React.FC = () => {
                         <p>Mon to Fri 9am to 6 pm</p>
                       </div>
                     </a>
-                  </div> 
+                  </div>
                   <div className="info_item row">
                     <div className="col" style={{ flexGrow: "unset" }}>
                       <a
