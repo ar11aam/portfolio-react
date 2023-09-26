@@ -71,14 +71,14 @@ const Projects = () => {
               <div className="row" style={{ marginTop: "70px" }}>
                 <div className="col d-flex justify-content-center align-items-center flex-column">
                   <img
-                    src="src\pages\img\responsive (1).png"
+                    src="assets/img/responsive (1).png"
                     alt=""
                     style={{ width: "100px" }}
                   />
                 </div>
                 <div className="col d-flex justify-content-center align-items-center flex-column">
                   <img
-                    src="src\pages\img\admin-panel.png"
+                    src="assets/img/admin-panel.png"
                     alt=""
                     style={{ width: "100px" }}
                   />
@@ -105,14 +105,14 @@ const Projects = () => {
               <div className="row" style={{ marginTop: "40px" }}>
                 <div className="col d-flex justify-content-center align-items-center flex-column">
                   <img
-                    src="src\pages\img\dynamic (1).png"
+                    src="assets/img/dynamic (1).png"
                     alt=""
                     style={{ width: "100px" }}
                   />
                 </div>
                 <div className="col d-flex justify-content-center align-items-center flex-column">
                   <img
-                    src="src\pages\img\online-shopping.png"
+                    src="assets/img/online-shopping.png"
                     alt=""
                     style={{ width: "100px" }}
                   />
