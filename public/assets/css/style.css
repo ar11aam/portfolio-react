@@ -2667,7 +2667,7 @@ h6 {
 /* Start Barand Area css
 ============================================================================================ */
 .brand_area {
-  padding-bottom: 170px; }
+  padding-bottom: 120px; }
   @media (max-width: 1199px) {
     .brand_area {
       padding-bottom: 80px; } }
@@ -2786,12 +2786,13 @@ h6 {
     .client-info .d-flex {
       -ms-flex-align: center;
       align-items: center; } }
-  .client-info .lage {
-    color: #854fee;
+  .client-info h2 {
+    color: transparent;
+    background: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+    -webkit-background-clip: text;
     font-family: 'Raleway', sans-serif;
-    font-size: 100px;
+    font-size: 140px;
     font-weight: 700;
-    line-height: 85px;
     position: relative;
     z-index: 9; }
   .client-info .smll {

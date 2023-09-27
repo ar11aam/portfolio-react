@@ -159,116 +159,108 @@ const Home: React.FC = () => {
           </h2>
           <br />
           <div
-            className="row justify-content-center align-items-center pt-5"
+            className="col justify-content-center align-items-center pt-5"
             style={{ flexWrap: "unset" }}
           >
-            <div className="col-lg-6">
-              <div className="row">
-                <motion.div
-                  className="col-lg-4 col-md-4 col-sm-6 m-2"
-                  onClick={() => null}
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  <div className="single-brand-item d-table">
-                    <div className="d-table-cell text-center">
-                      <img
-                        className="apply-color"
-                        id="first"
-                        src="assets/img/brands/php.svg"
-                        alt=""
-                      />
-                    </div>
+            <div className="row justify-content-center align-items-center">
+              <motion.div
+                onClick={() => null}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <div className="single-brand-item d-table mx-2">
+                  <div className="d-table-cell text-center">
+                    <img
+                      className="apply-color"
+                      id="first"
+                      src="assets/img/brands/php.svg"
+                      alt=""
+                    />
                   </div>
-                </motion.div>
-                <motion.div
-                  className="col-lg-4 col-md-4 col-sm-6 m-2"
-                  onClick={() => null}
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  <div className="single-brand-item d-table">
-                    <div className="d-table-cell text-center">
-                      <img
-                        className="apply-color"
-                        id="second"
-                        src="assets/img/brands/react.svg"
-                        alt=""
-                      />
-                    </div>
+                </div>
+              </motion.div>
+              <motion.div
+                onClick={() => null}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <div className="single-brand-item d-table mx-2">
+                  <div className="d-table-cell text-center">
+                    <img
+                      className="apply-color"
+                      id="second"
+                      src="assets/img/brands/react.svg"
+                      alt=""
+                    />
                   </div>
-                </motion.div>
-                <motion.div
-                  className="col-lg-4 col-md-4 col-sm-6 m-2"
-                  onClick={() => null}
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  <div className="single-brand-item d-table">
-                    <div className="d-table-cell text-center">
-                      <img
-                        className="apply-color"
-                        id="third"
-                        src="assets/img/brands/square-js.svg"
-                        alt=""
-                      />
-                    </div>
+                </div>
+              </motion.div>
+              <motion.div
+                onClick={() => null}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <div className="single-brand-item d-table mx-2">
+                  <div className="d-table-cell text-center">
+                    <img
+                      className="apply-color"
+                      id="third"
+                      src="assets/img/brands/square-js.svg"
+                      alt=""
+                    />
                   </div>
-                </motion.div>
-              </div>
-              <div className="row">
-                <motion.div
-                  className="col-lg-4 col-md-4 col-sm-6 m-2"
-                  onClick={() => null}
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  <div className="single-brand-item d-table">
-                    <div className="d-table-cell text-center">
-                      <img
-                        className="apply-color"
-                        id="forth"
-                        src="assets/img/brands/laravel.svg"
-                        alt=""
-                      />
-                    </div>
+                </div>
+              </motion.div>
+            </div>
+            <div className="row justify-content-center align-items-center">
+              <motion.div
+                onClick={() => null}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <div className="single-brand-item d-table mx-2">
+                  <div className="d-table-cell text-center">
+                    <img
+                      className="apply-color"
+                      id="forth"
+                      src="assets/img/brands/laravel.svg"
+                      alt=""
+                    />
                   </div>
-                </motion.div>
-                <motion.div
-                  className="col-lg-4 col-md-4 col-sm-6 m-2"
-                  onClick={() => null}
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  <div className="single-brand-item d-table">
-                    <div className="d-table-cell text-center">
-                      <img
-                        className="apply-color"
-                        id="sixth"
-                        src="assets/img/brands/bootstrap.svg"
-                        alt=""
-                      />
-                    </div>
+                </div>
+              </motion.div>
+              <motion.div
+                onClick={() => null}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <div className="single-brand-item d-table mx-2">
+                  <div className="d-table-cell text-center">
+                    <img
+                      className="apply-color"
+                      id="sixth"
+                      src="assets/img/brands/bootstrap.svg"
+                      alt=""
+                    />
                   </div>
-                </motion.div>
-                <motion.div
-                  className="col-lg-4 col-md-4 col-sm-6 m-2"
-                  onClick={() => null}
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  <div className="single-brand-item d-table">
-                    <div className="d-table-cell text-center">
-                      <img
-                        className="apply-color"
-                        id="fifth"
-                        src="assets/img/brands/typescript.svg"
-                        alt=""
-                      />
-                    </div>
+                </div>
+              </motion.div>
+              <motion.div
+                onClick={() => null}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <div className="single-brand-item d-table mx-2">
+                  <div className="d-table-cell text-center">
+                    <img
+                      className="apply-color"
+                      id="fifth"
+                      src="assets/img/brands/typescript.svg"
+                      alt=""
+                    />
                   </div>
-                </motion.div>
-              </div>
+                </div>
+              </motion.div>
             </div>
           </div>
         </div>
@@ -276,16 +268,13 @@ const Home: React.FC = () => {
       <section className="brand_area section_gap_bottom">
         <div className="container">
           <div className="row justify-content-center align-items-center pt-5">
-            <div className="col-lg-4 col-md-6">
-              <div className="client-info">
-                <div className="d-flex mb-50 justify-content-center align-items-center">
-                  <span className="lage">2</span>
-                  <span className="smll">
-                    Years Working <br /> Experience
-                  </span>
-                </div>
-              </div>
+            <div className="d-flex justify-content-center align-items-center client-info">
+              <h2>2 +</h2>
             </div>
+          </div>
+          <div className="row d-flex justify-content-center align-items-center flex-column">
+            <h2 style={{ fontWeight: "700" }}>Years Working Experience</h2>
+            <p>Hello!</p>
           </div>
         </div>
       </section>
