@@ -1,4 +1,4 @@
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <>
       {" "}
@@ -7,7 +7,7 @@ const Footer = () => {
           <hr />
         </div>
         <div className="container row my-4">
-          <div id="footer_top" className="col">
+          <div id="footer_top" className="col-md-6">
             <div className="row justify-content-center">
               <div className="col-lg-12">
                 <p
@@ -40,7 +40,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="col text-center mt-2">
+          <div className="col-md-6 text-center mt-2">
             <div>
               <p style={{ margin: "0", color: "#788489" }}>
                 Got a project in mind?

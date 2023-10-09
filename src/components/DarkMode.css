@@ -1,8 +1,12 @@
+@media (max-width: 576px) {
+    header{
+      padding-right: 25px;
+    }
+}
 
 .dark_mode_label {
     width: 65px;
     margin-top: -18px;
-    margin-left: 50px;
     height: 30px;
     position: relative;
     display: block;

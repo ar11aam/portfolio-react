@@ -1,3 +1,24 @@
+:root{
+  --body_color:#191919;
+  --body_background:#FCFBF4;
+  --cards_background:#FCFBF4;
+  --shadow_background:rgba(110, 105, 128, 0.42);
+  --lines-navbar:#1919195c;
+}
+
+[data-theme="dark"]{
+  --body_color:#FCFBF4;
+  --body_background:#191919;
+  --cards_background:#151515;
+  --shadow_background:rgb(0, 0, 0);
+  --lines-navbar:#ededed33;
+}
+
+body{
+  color: var(--body_color);
+  background-color: var(--body_background);
+}
+
 /* styles.css */
 .custom-alert {
   position: fixed;

@@ -1,46 +1,10 @@
 import { NavLink } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
-import { useEffect } from "react";
 import "./DarkMode.css";
+import Toogle from "../components/Toogle";
 
-const Header = () => {
+const Header: React.FC = () => {
   const imgStyle = {
     width: "160px",
-  };
-
-  const setDarkMode = () => {
-    const bodyElement = document.querySelector("body");
-    if (bodyElement) {
-      bodyElement.setAttribute("data-theme", "dark");
-      localStorage.setItem("selectedTheme", "dark");
-    }
-  };
-
-  const setLightMode = () => {
-    const bodyElement = document.querySelector("body");
-    if (bodyElement) {
-      bodyElement.setAttribute("data-theme", "light");
-      localStorage.setItem("selectedTheme", "light");
-    }
-  };
-
-  const selectedTheme = localStorage.getItem("selectedTheme");
-
-  useEffect(() => {
-    toggleTheme({ target: { checked: selectedTheme === "dark" } });
-  }, [selectedTheme]);
-
-  if (selectedTheme === "dark") {
-    setDarkMode();
-  }
-
-  const toggleTheme = (e: { target: { checked: any } }) => {
-    if (e.target.checked) {
-      setDarkMode();
-    } else {
-      setLightMode();
-    }
   };
 
   return (
@@ -68,7 +32,7 @@ const Header = () => {
               className="collapse navbar-collapse offset"
               id="navbarSupportedContent"
             >
-              <ul className="nav navbar-nav menu_nav justify-content-end">
+              <ul className="nav navbar-nav menu_nav justify-content-center">
                 <li className="nav-item">
                   <NavLink className="nav-link" to="/">
                     Home
@@ -90,19 +54,13 @@ const Header = () => {
                   </NavLink>
                 </li>
               </ul>
-              <div className="dark_mode">
-                <input
-                  className="dark_mode_input"
-                  type="checkbox"
-                  id="darkmode-toggle"
-                  onChange={toggleTheme}
-                  defaultChecked={selectedTheme === "dark"}
-                />
-                <label className="dark_mode_label" htmlFor="darkmode-toggle">
-                  <FontAwesomeIcon className="sun" icon={faSun} />
-                  <FontAwesomeIcon className="moon" icon={faMoon} />
-                </label>
-              </div>
+              <ul className="d-flex justify-content-center align-items-center p-0 m-0">
+                <li className="nav-item d-flex justify-content-center align-items-center">
+                  <a className="nav-link dark_mode">
+                    <Toogle />
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </nav>

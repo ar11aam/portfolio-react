@@ -2,6 +2,7 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import Lottie from "lottie-react";
+import Cards from "../components/Cards.tsx";
 import { motion } from "framer-motion";
 import animationSeven from "./json/animation_llse4q9g.json";
 import "./css/styles.css";
@@ -12,20 +13,14 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const Home: React.FC = () => {
-  const [selectedTheme] = useState(
+  const [selectedTheme] = useState<string>(
     localStorage.getItem("selectedTheme") || "light"
   );
 
   console.log("Selected theme:", selectedTheme);
 
-  const getImageSource = () => {
-    return selectedTheme === "dark"
-      ? "assets/img/Untitled design2.png"
-      : "assets/img/Untitled design1.png";
-  };
-
   const form = useRef<HTMLFormElement>(null);
-  const [isEmailSent, setEmailSent] = useState(false);
+  const [isEmailSent, setEmailSent] = useState<boolean>(false);
   const closeAlert = () => {
     setEmailSent(false);
   };
@@ -58,16 +53,27 @@ const Home: React.FC = () => {
       <section id="home" className="home_banner_area">
         <div className="banner_inner">
           <div className="container">
-            <div className="row">
-              <div className="col-lg-7" style={{ marginTop: "190px" }}>
-                <div className="banner_content">
-                  <h3 className="text-uppercase" style={{ fontWeight: "700" }}>
+            <div className="row flex-column flex-sm-row-reverse">
+              <div className="col-lg-5 col-md-5 col-sm-6 test-1">
+                <div className="home_right_img d-flex justify-content-center">
+                  <img
+                    src="assets/img/Untitled design2.png" // Toggle image source based on theme
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div className="col-lg-7 col-md-7 col-sm-6 test-2">
+                <div className="banner_content test-4">
+                  <h3 className="text-uppercase" style={{ fontWeight: "800" }}>
                     Programmer
                   </h3>
-                  <h1 className="text-uppercase" style={{ fontWeight: "600" }}>
+                  <h1 className="text-uppercase" style={{ fontWeight: "700" }}>
                     Web developer
                   </h1>
-                  <h3 className="text-uppercase" style={{ fontWeight: "700" }}>
+                  <h3
+                    className="text-uppercase test-5"
+                    style={{ fontWeight: "800" }}
+                  >
                     Designer
                   </h3>
                   <div className="d-flex align-items-center">
@@ -82,20 +88,6 @@ const Home: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-5" style={{ marginTop: "160px" }}>
-                <div className="home_right_img d-flex justify-content-center">
-                  <img
-                    key={selectedTheme} // Add this line to force re-render when the theme changes
-                    src={getImageSource()} // Toggle image source based on theme
-                    alt=""
-                    style={{
-                      width: "400px",
-                      marginLeft: "40px",
-                      marginTop: "10px",
-                    }}
-                  />
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -103,14 +95,17 @@ const Home: React.FC = () => {
       <section id="about" className="about_area section_gap">
         <div className="container">
           <div className="row justify-content-center text-center align-items-center">
-            <div className="col-lg-5" style={{ paddingBottom: "80px" }}>
+            <div
+              className="col-lg-6 col-md-6 col-sm-12"
+              style={{ paddingBottom: "80px" }}
+            >
               <div className="about_img">
                 <Lottie animationData={animationSeven}></Lottie>
               </div>
             </div>
 
-            <div className="offset-lg-1 col-lg-5">
-              <div className="main_title text-left">
+            <div className="col-lg-6 col-md-6 col-sm-12">
+              <div className="main_title text-left test-3">
                 <h2>
                   Who <br />
                   am i?
@@ -158,198 +153,154 @@ const Home: React.FC = () => {
             My Expertise
           </h2>
           <br />
-          <div
-            className="col justify-content-center align-items-center pt-5"
-            style={{ flexWrap: "unset" }}
-          >
-            <div className="row justify-content-center align-items-center">
-              <motion.div
-                onClick={() => null}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <div className="single-brand-item d-table mx-2">
-                  <div className="d-table-cell text-center">
-                    <img
-                      className="apply-color"
-                      id="first"
-                      src="assets/img/brands/php.svg"
-                      alt=""
-                    />
+          <div className="col pt-5" style={{ flexWrap: "unset" }}>
+            <div className="row d-flex justify-content-center align-items-center">
+              <div className="col-lg-4 col-md-4 col-sm-6">
+                <motion.div
+                  onClick={() => null}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <div className="single-brand-item d-flex justify-content-center align-items-center">
+                    <div className="text-center">
+                      <img
+                        className="apply-color"
+                        id="first"
+                        src="assets/img/brands/php.svg"
+                        alt=""
+                      />
+                    </div>
                   </div>
-                </div>
-              </motion.div>
-              <motion.div
-                onClick={() => null}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <div className="single-brand-item d-table mx-2">
-                  <div className="d-table-cell text-center">
-                    <img
-                      className="apply-color"
-                      id="second"
-                      src="assets/img/brands/react.svg"
-                      alt=""
-                    />
+                </motion.div>
+              </div>
+              <div className="col-lg-4 col-md-4 col-sm-6">
+                <motion.div
+                  onClick={() => null}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <div className="single-brand-item d-flex justify-content-center align-items-center">
+                    <div className="text-center">
+                      <img
+                        className="apply-color"
+                        id="second"
+                        src="assets/img/brands/react.svg"
+                        alt=""
+                      />
+                    </div>
                   </div>
-                </div>
-              </motion.div>
-              <motion.div
-                onClick={() => null}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <div className="single-brand-item d-table mx-2">
-                  <div className="d-table-cell text-center">
-                    <img
-                      className="apply-color"
-                      id="third"
-                      src="assets/img/brands/square-js.svg"
-                      alt=""
-                    />
+                </motion.div>
+              </div>
+              <div className="col-lg-4 col-md-4 col-sm-6">
+                <motion.div
+                  onClick={() => null}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <div className="single-brand-item d-flex justify-content-center align-items-center">
+                    <div className="text-center">
+                      <img
+                        className="apply-color"
+                        id="third"
+                        src="assets/img/brands/square-js.svg"
+                        alt=""
+                      />
+                    </div>
                   </div>
-                </div>
-              </motion.div>
+                </motion.div>
+              </div>
             </div>
             <div className="row justify-content-center align-items-center">
-              <motion.div
-                onClick={() => null}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <div className="single-brand-item d-table mx-2">
-                  <div className="d-table-cell text-center">
-                    <img
-                      className="apply-color"
-                      id="forth"
-                      src="assets/img/brands/laravel.svg"
-                      alt=""
-                    />
+              <div className="col-lg-4 col-md-4 col-sm-6">
+                <motion.div
+                  onClick={() => null}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <div className="single-brand-item d-flex justify-content-center align-items-center">
+                    <div className="text-center">
+                      <img
+                        className="apply-color"
+                        id="forth"
+                        src="assets/img/brands/laravel.svg"
+                        alt=""
+                      />
+                    </div>
                   </div>
-                </div>
-              </motion.div>
-              <motion.div
-                onClick={() => null}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <div className="single-brand-item d-table mx-2">
-                  <div className="d-table-cell text-center">
-                    <img
-                      className="apply-color"
-                      id="sixth"
-                      src="assets/img/brands/bootstrap.svg"
-                      alt=""
-                    />
+                </motion.div>
+              </div>
+              <div className="col-lg-4 col-md-4 col-sm-6">
+                <motion.div
+                  onClick={() => null}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <div className="single-brand-item d-flex justify-content-center align-items-center">
+                    <div className="text-center">
+                      <img
+                        className="apply-color"
+                        id="sixth"
+                        src="assets/img/brands/bootstrap.svg"
+                        alt=""
+                      />
+                    </div>
                   </div>
-                </div>
-              </motion.div>
-              <motion.div
-                onClick={() => null}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <div className="single-brand-item d-table mx-2">
-                  <div className="d-table-cell text-center">
-                    <img
-                      className="apply-color"
-                      id="fifth"
-                      src="assets/img/brands/typescript.svg"
-                      alt=""
-                    />
+                </motion.div>
+              </div>
+              <div className="col-lg-4 col-md-4 col-sm-6">
+                <motion.div
+                  onClick={() => null}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <div className="single-brand-item d-flex justify-content-center align-items-center">
+                    <div className="text-center">
+                      <img
+                        className="apply-color"
+                        id="fifth"
+                        src="assets/img/brands/typescript.svg"
+                        alt=""
+                      />
+                    </div>
                   </div>
-                </div>
-              </motion.div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="brand_area section_gap_bottom">
-        <div className="container">
-          <div className="row justify-content-center align-items-center pt-5">
-            <div className="d-flex justify-content-center align-items-center client-info">
-              <h2>2 +</h2>
-            </div>
-          </div>
-          <div className="row d-flex justify-content-center align-items-center flex-column">
-            <h2 style={{ fontWeight: "700" }}>Years Working Experience</h2>
-            <p>Hello!</p>
-          </div>
-        </div>
-      </section>
-      <section id="services" className="features_area">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-8 text-center">
-              <div className="main_title">
-                <h2>Service i offer</h2>
+                </motion.div>
               </div>
             </div>
           </div>
-          <div className="row feature_inner">
-            <div className="col-lg-3 col-md-6">
-              <motion.div
-                className="feature_item"
-                onClick={() => null}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                style={{ height: "350px" }}
-              >
-                <img src="assets/img/services/s1.png" alt="" />
-                <h4>Web development</h4>
-                <p>Dedicated to designing seamless online experiences.</p>
-              </motion.div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <motion.div
-                className="feature_item"
-                onClick={() => null}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                style={{ height: "350px" }}
-              >
-                <img src="assets/img/services/s2.png" alt="" />
-                <h4>Programming</h4>
-                <p>
-                  Bringing concepts to life through the power of programming.
-                </p>
-              </motion.div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <motion.div
-                className="feature_item"
-                onClick={() => null}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                style={{ height: "350px" }}
-              >
-                <img src="assets/img/services/s3.png" alt="" />
-                <h4>Web design</h4>
-                <p>
-                  Design is not just about looks, but about how it makes users
-                  feel.
-                </p>
-              </motion.div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <motion.div
-                className="feature_item"
-                onClick={() => null}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                style={{ height: "350px" }}
-              >
-                <img src="assets/img/services/s4.png" alt="" />
-                <h4>Database Management</h4>
-                <p>
-                  Designing, optimizing, and managing databases to support your
-                  growth.
-                </p>
-              </motion.div>
-            </div>
-          </div>
         </div>
+      </section>
+      <section className="d-flex justify-center align-items-center flex-column text-center">
+        <div className="col container test-6">
+          <h2 className="text-center">
+            <span
+              style={{
+                borderBottomWidth: "8px",
+                borderBottomStyle: "solid",
+                borderBottomColor: "#854fee",
+              }}
+            >
+              2 +
+            </span>{" "}
+            Working Experience
+          </h2>
+          <div className="container mb-4 mt-5 test-7">
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis.
+            </p>
+          </div>
+          <motion.a
+            className="selected-btn-two px-3"
+            onClick={() => null}
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.6 }}
+          >
+            See More
+          </motion.a>
+        </div>
+      </section>
+      <section>
+        <Cards />
       </section>
       <div className="testimonial_area section_gap_bottom">
         <div className="container">

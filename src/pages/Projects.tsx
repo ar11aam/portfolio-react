@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const Projects = () => {
+const Projects: React.FC = () => {
   return (
     <>
       {" "}
