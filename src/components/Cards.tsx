@@ -6,7 +6,7 @@ const Cards: React.FC = () => {
       <section id="services" className="features_area">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-8 text-center">
+            <div className="col-lg-8 text-center test-21">
               <div className="main_title">
                 <h2>Service i offer</h2>
               </div>
@@ -19,7 +19,6 @@ const Cards: React.FC = () => {
                 onClick={() => null}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                style={{ height: "350px" }}
               >
                 <img src="assets/img/services/s1.png" alt="" />
                 <h4>Web development</h4>
@@ -32,7 +31,6 @@ const Cards: React.FC = () => {
                 onClick={() => null}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                style={{ height: "350px" }}
               >
                 <img src="assets/img/services/s2.png" alt="" />
                 <h4>Programming</h4>
@@ -47,7 +45,6 @@ const Cards: React.FC = () => {
                 onClick={() => null}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                style={{ height: "350px" }}
               >
                 <img src="assets/img/services/s3.png" alt="" />
                 <h4>Web design</h4>
@@ -63,7 +60,6 @@ const Cards: React.FC = () => {
                 onClick={() => null}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                style={{ height: "350px" }}
               >
                 <img src="assets/img/services/s4.png" alt="" />
                 <h4>Database Management</h4>

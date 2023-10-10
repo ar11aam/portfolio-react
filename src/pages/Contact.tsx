@@ -65,84 +65,10 @@ const Contact: React.FC = () => {
               <h2 className="text-center">Reach Me Directly</h2>
             </div>
             <div
-              className="row d-flex "
+              className="row d-flex"
               style={{ flexWrap: "wrap", padding: "20px" }}
             >
-              <div className="col-lg-4 d-flex">
-                <div className="contact_info">
-                  <div className="info_item row pb-3">
-                    <div className="col" style={{ flexGrow: "unset" }}>
-                      <FontAwesomeIcon
-                        icon={faHouse}
-                        style={{
-                          fontSize: "40px",
-                          paddingTop: "5px",
-                          color: "#854fee",
-                        }}
-                      />
-                    </div>
-                    <div className="col">
-                      <h6 style={{ color: "unset" }}>Punjab, Pakistan</h6>
-                      <p>
-                        Khayban-e-sarwar
-                        <br /> D. G. Khan
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="info_item row pb-3">
-                    <div className="col" style={{ flexGrow: "unset" }}>
-                      <a href="tel:+923176514544" style={{ color: "unset" }}>
-                        <FontAwesomeIcon
-                          icon={faPhone}
-                          style={{
-                            fontSize: "40px",
-                            color: "#854fee",
-                          }}
-                        />
-                      </a>
-                    </div>
-                    <a
-                      href="tel:+923176514544"
-                      style={{ color: "unset" }}
-                      id="info_item"
-                    >
-                      <div className="col">
-                        <h6>
-                          <a>+92 317 6514 544</a>
-                        </h6>
-                        <p>Mon to Fri 9am to 6 pm</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="info_item row">
-                    <div className="col" style={{ flexGrow: "unset" }}>
-                      <a
-                        href="mailto: arhamtayyab553@gmail.com"
-                        style={{ color: "unset" }}
-                      >
-                        <FontAwesomeIcon
-                          icon={faEnvelope}
-                          style={{ fontSize: "40px", color: "#854fee" }}
-                        />
-                      </a>
-                    </div>
-                    <a
-                      href="mailto: arhamtayyab553@gmail.com"
-                      style={{ color: "unset" }}
-                      id="info_item"
-                    >
-                      <div className="col">
-                        <h6>
-                          <a>arhamtayyab553@gmail.com</a>
-                        </h6>
-                        <p>Send us your query anytime!</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 order-sm-2">
                 <form
                   ref={form}
                   onSubmit={sendEmail}
@@ -195,6 +121,79 @@ const Contact: React.FC = () => {
                     </div>
                   </div>
                 </form>
+              </div>
+              <div className="col-lg-4 d-flex order-sm-1 test-24">
+                <div className="contact_info">
+                  <div className="info_item row pb-3">
+                    <div className="col" style={{ flexGrow: "unset" }}>
+                      <FontAwesomeIcon
+                        icon={faHouse}
+                        style={{
+                          fontSize: "40px",
+                          paddingTop: "5px",
+                          color: "#854fee",
+                        }}
+                      />
+                    </div>
+                    <div className="col">
+                      <h6 style={{ color: "unset" }}>Punjab, Pakistan</h6>
+                      <p>
+                        Khayban-e-sarwar
+                        <br /> D. G. Khan
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="info_item row pb-3">
+                    <div className="col" style={{ flexGrow: "unset" }}>
+                      <a href="tel:+923176514544" style={{ color: "unset" }}>
+                        <FontAwesomeIcon
+                          icon={faPhone}
+                          style={{
+                            fontSize: "40px",
+                            color: "#854fee",
+                          }}
+                        />
+                      </a>
+                    </div>
+                    <div className="col">
+                      <a
+                        href="tel:+923176514544"
+                        style={{ color: "unset" }}
+                        id="info_item"
+                      >
+                        <h6>
+                          <a>+92 317 6514 544</a>
+                        </h6>
+                        <p>Mon to Fri 9am to 6 pm</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div className="row pb-3 test-23">
+                    <div className="col" style={{ flexGrow: "unset" }}>
+                      <a
+                        href="mailto: arhamtayyab553@gmail.com"
+                        style={{ color: "unset" }}
+                      >
+                        <FontAwesomeIcon
+                          icon={faEnvelope}
+                          style={{ fontSize: "40px", color: "#854fee" }}
+                        />
+                      </a>
+                    </div>
+                    <div className="col-9">
+                      <a
+                        href="mailto: arhamtayyab553@gmail.com"
+                        style={{ color: "unset" }}
+                      >
+                        <h6>
+                          <a>arhamtayyab553@gmail.com</a>
+                        </h6>
+                        <p>Send us your query anytime!</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

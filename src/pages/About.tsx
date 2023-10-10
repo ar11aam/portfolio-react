@@ -6,8 +6,8 @@ const About: React.FC = () => {
     <>
       <section className="portfolio_area section_gap_top" id="portfolio">
         <div className="container">
-          <div className="row" style={{ marginBottom: "50px" }}>
-            <div className="col-lg-12">
+          <div className="row test-17">
+            <div className="col-lg-12 test-19">
               <div className="main_title text-left">
                 <h2 className="text-center">Know About Me</h2>
               </div>

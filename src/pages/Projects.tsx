@@ -7,7 +7,7 @@ const Projects: React.FC = () => {
       <section className="portfolio_area section_gap_top" id="portfolio">
         <div className="container">
           <div className="row">
-            <div className="col-lg-12">
+            <div className="col-lg-12 test-20 ">
               <div className="main_title text-left">
                 <h2 className="text-center">Recently done project </h2>
               </div>
@@ -211,20 +211,6 @@ const Projects: React.FC = () => {
             style={{ marginTop: "80px" }}
           >
             <a className="text-center">More</a>
-          </div>
-        </div>
-      </section>
-      <section className="features_area section_gap_top">
-        <div className="row justify-content-center">
-          <div className="col-lg-8 text-center">
-            <div className="main_title">
-              <h2>service offers </h2>
-              <p>
-                Is give may shall likeness made yielding spirit a itself togeth
-                created after sea <br /> is in beast beginning signs open god
-                you're gathering ithe
-              </p>
-            </div>
           </div>
         </div>
       </section>
