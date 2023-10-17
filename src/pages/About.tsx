@@ -48,11 +48,13 @@ const About: React.FC = () => {
 
               <div className="row">
                 <p className="test-8">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Cumque dolorum ullam dignissimos ratione fuga laudantium
-                  repellendus facilis iste impedit. Optio repellendus et illum
-                  alias fugit libero laborum, incidunt officia a sunt voluptates
-                  aperiam temporibus?
+                  {" "}
+                  "Passionate about learning and fostering positivity, I delved
+                  into computer science out of curiosity. My journey began at
+                  Signature Technologies Ltd., where I acquired teamwork,
+                  communication, and industry insights. Motivated by newfound
+                  vigor, I transitioned to freelancing, committed to continuous
+                  growth and making a meaningful difference."
                 </p>
               </div>
             </div>

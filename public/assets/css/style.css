@@ -509,7 +509,7 @@ button:focus {
         .test-6 h2{
           font-weight: 800;
           color: var(--lg-text-color);
-          font-size: 45px;
+          font-size: 40px;
         } 
         .test-8{
           text-align: center;
@@ -599,6 +599,17 @@ button:focus {
           padding-left: 45px;
         }
 
+        .test-25{
+          font-size: 12px;
+          color: #788489;
+          margin-left: 72px;
+          display:flex;
+          align-items:center;
+          justify-content:start; 
+        }
+
+       
+
         @media (max-width: 1200px) {
 
         .test-19{
@@ -650,6 +661,19 @@ button:focus {
           }
           .test-24{
             margin-top: 100px;
+          }
+          .test-25{
+            font-size: 10px;
+            margin: 0px;
+            justify-content: center;
+          }
+          .test-26{
+            display: flex;
+            align-items:center;
+            justify-content:start;
+          }
+          .test-27{
+            padding-left: 45px;
           }
           .test-18{
             padding-bottom: 20px;
@@ -3561,7 +3585,7 @@ a .nav-link .active{
 
   .footer_area {
     padding-top: 80px !important;
-    padding-bottom: 80px !important;
+    padding-bottom: 5px !important;
     background-color: var(--body_background); }
 
   /* Blog page Area css

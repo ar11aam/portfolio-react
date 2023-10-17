@@ -56,8 +56,8 @@ const Footer: React.FC = () => {
                 Let's talk
               </h1>
             </div>
-            <div className="row d-flex align-items-center justify-content-center">
-              <div className="col d-flex align-items-center justify-content-center">
+            <div className="row d-flex align-items-center justify-content-center test-27">
+              <div className="col test-26">
                 <a href="tel:+923176514544">
                   <p
                     style={{
@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
                   </p>
                 </a>
               </div>
-              <div className="col d-flex align-items-center justify-content-center">
+              <div className="col test-26">
                 <a href="mailto: arhamtayyab553@gmail.com">
                   <p
                     style={{
@@ -91,12 +91,9 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-        <div
-          className="text-center d-flex align-items-center justify-content-start"
-          style={{ fontSize: "12px", color: "#788489", marginLeft: "72px" }}
-        >
+        <div className="test-25">
           <i className="fa-regular fa-copyright p-1"></i>
-          <p style={{ margin: "0px" }}>
+          <p style={{ margin: "0px" }} className="text-center">
             2023 Arham Tayyab. All rights reserved
           </p>
         </div>

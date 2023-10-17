@@ -284,12 +284,13 @@ const Home: React.FC = () => {
             >
               2 +
             </span>{" "}
-            Years Working Experience
+            Years Experience
           </h2>
           <div className="container test-7">
             <p>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis.
+              "Delivering impactful projects for a range of clients using
+              Laravel PHP, PHP, MySQL, React.js, Tailwind CSS, Bootstrap, and
+              C++."
             </p>
           </div>
           <motion.a
@@ -319,15 +320,18 @@ const Home: React.FC = () => {
               <div className="testi_item">
                 <div className="row">
                   <div className="col-lg-4">
-                    <img src="assets/img/testimonials/t1.jpg" alt="" />
+                    <img
+                      src="assets/img/man.jpg"
+                      alt=""
+                      style={{ height: "130px" }}
+                    />
                   </div>
                   <div className="col-lg-8">
                     <div className="testi_text">
-                      <h4>Elite Martin</h4>
+                      <h4>Zohaib</h4>
                       <p>
-                        Him, made can't called over won't there on divide there
-                        male fish beast own his day third seed sixth seas unto.
-                        Saw from{" "}
+                        He is very smart human always hungry to learn
+                        something new.{" "}
                       </p>
                     </div>
                   </div>
@@ -336,15 +340,18 @@ const Home: React.FC = () => {
               <div className="testi_item">
                 <div className="row">
                   <div className="col-lg-4">
-                    <img src="assets/img/testimonials/t2.jpg" alt="" />
+                    <img
+                      src="assets/img/woman.png"
+                      alt=""
+                      style={{ height: "130px" }}
+                    />
                   </div>
                   <div className="col-lg-8">
                     <div className="testi_text">
-                      <h4>Davil Saden</h4>
+                      <h4>Amna</h4>
                       <p>
-                        Him, made can't called over won't there on divide there
-                        male fish beast own his day third seed sixth seas unto.
-                        Saw from{" "}
+                        Arham helped me making my portfolio and few personal
+                        projects. Recommended{" "}
                       </p>
                     </div>
                   </div>
@@ -353,15 +360,18 @@ const Home: React.FC = () => {
               <div className="testi_item">
                 <div className="row">
                   <div className="col-lg-4">
-                    <img src="assets/img/testimonials/t1.jpg" alt="" />
+                    <img
+                      src="assets/img/man.jpg"
+                      alt=""
+                      style={{ height: "130px" }}
+                    />
                   </div>
                   <div className="col-lg-8">
                     <div className="testi_text">
-                      <h4>Elite Martin</h4>
+                      <h4>Ali malik</h4>
                       <p>
-                        Him, made can't called over won't there on divide there
-                        male fish beast own his day third seed sixth seas unto.
-                        Saw from{" "}
+                        I worked with him at a workshop and man i loved his
+                        work. Looking to work with him again{" "}
                       </p>
                     </div>
                   </div>
@@ -370,16 +380,16 @@ const Home: React.FC = () => {
               <div className="testi_item">
                 <div className="row">
                   <div className="col-lg-4">
-                    <img src="assets/img/testimonials/t2.jpg" alt="" />
+                    <img
+                      src="assets/img/man.jpg"
+                      alt=""
+                      style={{ height: "130px" }}
+                    />
                   </div>
                   <div className="col-lg-8">
                     <div className="testi_text">
-                      <h4>Davil Saden</h4>
-                      <p>
-                        Him, made can't called over won't there on divide there
-                        male fish beast own his day third seed sixth seas unto.
-                        Saw from{" "}
-                      </p>
+                      <h4>Haider Ali</h4>
+                      <p>Hungry guy </p>
                     </div>
                   </div>
                 </div>
@@ -387,32 +397,18 @@ const Home: React.FC = () => {
               <div className="testi_item">
                 <div className="row">
                   <div className="col-lg-4">
-                    <img src="assets/img/testimonials/t1.jpg" alt="" />
+                    <img
+                      src="assets/img/man.jpg"
+                      alt=""
+                      style={{ height: "130px" }}
+                    />
                   </div>
                   <div className="col-lg-8">
                     <div className="testi_text">
-                      <h4>Elite Martin</h4>
+                      <h4>Abdullah</h4>
                       <p>
-                        Him, made can't called over won't there on divide there
-                        male fish beast own his day third seed sixth seas unto.
-                        Saw from{" "}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="testi_item">
-                <div className="row">
-                  <div className="col-lg-4">
-                    <img src="assets/img/testimonials/t2.jpg" alt="" />
-                  </div>
-                  <div className="col-lg-8">
-                    <div className="testi_text">
-                      <h4>Davil Saden</h4>
-                      <p>
-                        Him, made can't called over won't there on divide there
-                        male fish beast own his day third seed sixth seas unto.
-                        Saw from{" "}
+                        I'm his one of first clients and i would say this man
+                        does not leave anything to satisfy you.{" "}
                       </p>
                     </div>
                   </div>
