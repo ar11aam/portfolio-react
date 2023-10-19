@@ -12,6 +12,8 @@
   --lg-text-color: #1f1f1f;
   --sm-text-color:rgb(83, 83, 83);
   --hr-line-color:rgb(83, 83, 83);
+  --border-color:rgba(199, 199, 199, 0.267);
+  --header-color:rgba(255, 255, 255, 0.566);
 }
 
 [data-theme="dark"]{
@@ -23,6 +25,8 @@
   --lg-text-color: #FCFBF4;
   --sm-text-color:rgb(181, 181, 181);
   --hr-line-color:rgb(83, 83, 83);
+  --border-color:rgba(37, 37, 37, 0.345);
+  --header-color:#191919c2;
 }
 
 hr {
@@ -309,10 +313,13 @@ button:focus {
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .header_area {
-  position: absolute;
+  position: fixed;
+  transition: all .3s ease-out 0s!important;
+  top: 0;
   width: 100%;
   z-index: 9999;
-  background: var(--body_background);
+  background-color: var(--header-color)!important;
+  backdrop-filter: blur(15px)!important;
   color: var(--body_color);
  }
 
