@@ -57,10 +57,7 @@ const Contact: React.FC = () => {
               </button>
             </div>
           )}
-          <div
-            className="container"
-            style={{ marginBottom: "50px", marginTop: "150px" }}
-          >
+          <div className="container test-30">
             <div className="main_title">
               <h2 className="text-center">Reach Me Directly</h2>
             </div>
