@@ -14,8 +14,8 @@ const Toogle: React.FC = () => {
   const setLightMode = () => {
     const bodyElement = document.querySelector("body");
     if (bodyElement) {
-      bodyElement.setAttribute("data-theme", "light");
-      localStorage.setItem("selectedTheme", "light");
+      bodyElement.setAttribute("data-theme", "dark");
+      localStorage.setItem("selectedTheme", "dark");
     }
   };
 

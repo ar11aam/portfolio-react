@@ -13,11 +13,17 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const Home: React.FC = () => {
-  const [selectedTheme] = useState<string>(
-    localStorage.getItem("selectedTheme") || "light"
-  );
+  const bodyElement = document.querySelector("body");
 
-  console.log("Selected theme:", selectedTheme);
+  if (bodyElement) {
+    bodyElement.setAttribute("data-theme", "dark");
+    localStorage.setItem("selectedTheme", "dark");
+  }
+  // const [selectedTheme] = useState<string>(
+  //   localStorage.getItem("selectedTheme") || "dark"
+  // );
+
+  // console.log("Selected theme:", selectedTheme);
 
   const form = useRef<HTMLFormElement>(null);
   const [isEmailSent, setEmailSent] = useState<boolean>(false);
@@ -330,8 +336,8 @@ const Home: React.FC = () => {
                     <div className="testi_text">
                       <h4>Zohaib</h4>
                       <p>
-                        He is very smart human always hungry to learn
-                        something new.{" "}
+                        He is very smart human always hungry to learn something
+                        new.{" "}
                       </p>
                     </div>
                   </div>

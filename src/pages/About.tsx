@@ -49,12 +49,10 @@ const About: React.FC = () => {
               <div className="row">
                 <p className="test-8">
                   {" "}
-                  "Passionate about learning and fostering positivity, I delved
-                  into computer science out of curiosity. My journey began at
-                  Signature Technologies Ltd., where I acquired teamwork,
-                  communication, and industry insights. Motivated by newfound
-                  vigor, I transitioned to freelancing, committed to continuous
-                  growth and making a meaningful difference."
+                  "My journey began at Signature Technologies Ltd., where I
+                  acquired teamwork, communication, and industry insights. I
+                  transitioned to freelancing, committed to continuous growth
+                  and making a meaningful difference."
                 </p>
               </div>
             </div>

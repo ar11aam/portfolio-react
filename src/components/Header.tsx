@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./DarkMode.css";
-import Toogle from "../components/Toogle";
+// import Toogle from "../components/Toogle";
 
 const Header: React.FC = () => {
   const imgStyle = {
@@ -54,13 +54,13 @@ const Header: React.FC = () => {
                   </NavLink>
                 </li>
               </ul>
-              <ul className="d-flex justify-content-center align-items-center p-0 m-0">
+              {/* <ul className="d-flex justify-content-center align-items-center p-0 m-0">
                 <li className="nav-item d-flex justify-content-center align-items-center">
                   <a className="nav-link dark_mode">
                     <Toogle />
                   </a>
                 </li>
-              </ul>
+              </ul> */}
             </div>
           </div>
         </nav>
